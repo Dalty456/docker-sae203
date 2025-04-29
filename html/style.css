@@ -1,65 +1,82 @@
-/* Styles de base */
 body {
+  background-color: #f9f9f9;
+  color: #111;
   font-family: Arial, sans-serif;
-  background-color: white;  /* Fond blanc */
-  color: black;  /* Texte en noir */
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Centrage général */
-}
-
-h1 {
-  margin-top: 1.5em;
-  color: black;  /* Titre en noir */
-}
-
-.intro {
-  margin-bottom: 2em;
-  font-size: 1.1em;
-  color: #333;  /* Texte légèrement gris pour un meilleur contraste */
-}
-
-/* Conteneur général pour centrer les sections */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-/* Style des sections */
-section {
-  background-color: #f0f0f0;  /* Sections en gris clair */
-  border-radius: 12px;
-  margin: 1.5em 0;
-  padding: 1.5em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre discrète */
-  text-align: center; /* Centrer le texte de la section */
-  color: #333;  /* Texte gris foncé dans les sections */
-}
-
-/* Style des boutons */
-.btn {
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  background-color: #333;  /* Fond noir pour les boutons */
-  color: white;  /* Texte en blanc sur les boutons */
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: 1em;
-}
-
-.btn:hover {
-  background-color: #555;  /* Légèrement plus clair au survol */
-}
-
-/* Pied de page */
-footer {
+  margin: 20px;
+  line-height: 1.6;
   text-align: center;
-  padding: 1em 0;
-  margin-top: 3em;
-  background-color: #f0f0f0;  /* Fond gris clair */
-  color: #333;  /* Texte gris foncé */
-  font-size: 0.9em;
+}
+
+h1, h3 {
+  color: #000;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  color: #333;
+}
+
+.musique {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+  transition: background-color 0.3s ease;
+}
+
+.musique:hover {
+  background-color: #f0f0f0;
+}
+
+h4 {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+small {
+  color: #555;
+}
+
+.thumbnail {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+table {
+  margin: 30px auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+td {
+  background-color: #fff;
+  color: #222;
+}
+
+a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean
 
 # Copier les fichiers de ton site dans le dossier web Apache
-COPY ./site-web/ /var/www/html/
+COPY ./html/ /var/www/html/
 
 # Exposer le port 80
 EXPOSE 80

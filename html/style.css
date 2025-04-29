@@ -1,1 +1,118 @@
 
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #FFD700;
+  text-shadow: 2px 2px 8px #000;
+  animation: fadeInDown 1s ease-out;
+}
+
+h3 {
+  font-size: 2rem;
+  border-left: 5px solid #FFD700;
+  padding-left: 15px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.musique {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.musique:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.musique h4 {
+  font-size: 1.5rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #FFD700;
+  transition: transform 0.4s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 60px;
+  border: none;
+  height: 1px;
+  background: #FFD700;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .musique {
+    padding: 15px;
+  }
+
+  .musique h4 {
+    font-size: 1.2rem;
+  }
+}

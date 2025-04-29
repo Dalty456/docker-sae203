@@ -1,0 +1,57 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.music-list {
+  list-style: decimal inside;
+  padding-left: 0;
+}
+
+.music-list li {
+  margin: 10px 0;
+}
+
+.music-list a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.music-list a:hover {
+  color: #1abc9c;
+}
+
+.btn-retour {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-retour:hover {
+  background-color: #2980b9;
+}

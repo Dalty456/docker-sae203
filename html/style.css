@@ -1,118 +1,65 @@
-
-/* style.css */
-
+/* Styles de base */
 body {
+  font-family: Arial, sans-serif;
+  background-color: white;  /* Fond blanc */
+  color: black;  /* Texte en noir */
   margin: 0;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
-  line-height: 1.6;
-  padding: 20px;
+  padding: 0;
+  text-align: center; /* Centrage général */
 }
 
 h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: #FFD700;
-  text-shadow: 2px 2px 8px #000;
-  animation: fadeInDown 1s ease-out;
+  margin-top: 1.5em;
+  color: black;  /* Titre en noir */
 }
 
-h3 {
-  font-size: 2rem;
-  border-left: 5px solid #FFD700;
-  padding-left: 15px;
-  margin-top: 50px;
-  color: #ffffff;
+.intro {
+  margin-bottom: 2em;
+  font-size: 1.1em;
+  color: #333;  /* Texte légèrement gris pour un meilleur contraste */
 }
 
-p {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-  font-size: 1.1rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.musique {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  width: 90%;
+/* Conteneur général pour centrer les sections */
+.container {
   max-width: 800px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, background 0.3s ease;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-.musique:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.musique h4 {
-  font-size: 1.5rem;
-  color: #FFD700;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 5px black;
-}
-
-.thumbnail {
-  width: 100%;
-  height: auto;
+/* Style des sections */
+section {
+  background-color: #f0f0f0;  /* Sections en gris clair */
   border-radius: 12px;
-  border: 3px solid #FFD700;
-  transition: transform 0.4s ease;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre discrète */
+  text-align: center; /* Centrer le texte de la section */
+  color: #333;  /* Texte gris foncé dans les sections */
 }
 
-.thumbnail:hover {
-  transform: scale(1.05);
-}
-
-a {
+/* Style des boutons */
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #333;  /* Fond noir pour les boutons */
+  color: white;  /* Texte en blanc sur les boutons */
   text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1em;
 }
 
-hr {
-  margin-top: 60px;
-  border: none;
-  height: 1px;
-  background: #FFD700;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+.btn:hover {
+  background-color: #555;  /* Légèrement plus clair au survol */
 }
 
-/* Animations */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  .musique {
-    padding: 15px;
-  }
-
-  .musique h4 {
-    font-size: 1.2rem;
-  }
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+  background-color: #f0f0f0;  /* Fond gris clair */
+  color: #333;  /* Texte gris foncé */
+  font-size: 0.9em;
 }
